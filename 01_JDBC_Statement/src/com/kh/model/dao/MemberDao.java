@@ -122,8 +122,8 @@ public class MemberDao {
 		ArrayList<Member> list = new ArrayList<>(); // 현재 텅빈 리스트
 		
 		// Connection, Statement, ResultSet
-		Connection conn = null;
-		Statement stmt = null;
+		Connection conn = null; // 접속된 DB의 연결정보를 담는 변수
+		Statement stmt = null; // SQL문 실행 후 결과를 받기위한 변수
 		ResultSet rset = null; // SELECT문이 실행된 조회결과값들이 처음에 실질적으로 담길 객체
 		
 		String sql = "SELECT * FROM MEMBER";
